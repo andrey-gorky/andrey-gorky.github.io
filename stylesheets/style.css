@@ -4,6 +4,8 @@
   padding: 0;
   margin: 0;
   border: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -19,16 +21,14 @@ html, body {
 .navbar-light .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(37, 54, 71)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
-
 .navbar-light .navbar-toggler {
   border-color: #1f282c;
 }
 
-#togglerColor .navbar-dark .navbar-toggler-icon {
+.navbar-dark .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
-
-#togglerColor .navbar-dark .navbar-toggler {
+.navbar-dark .navbar-toggler {
   border-color: #FFF;
 }
 
@@ -36,7 +36,7 @@ html, body {
   padding: 0.0625rem 0.375rem;
 }
 
-/* NAVBAR BACKGROUND CHANGE FUNCTION */
+/* NAVBAR BACKGROUND COLOR CHANGE FUNCTION */
 .navbar.scrolled {
   background-color: #1f282c;
   transition: background 500ms;
@@ -46,18 +46,19 @@ html, body {
 #mainNavbar .nav-link {
   color: #1f282c;
 }
-
 #mainNavbar .navbar-brand {
   color: #1f282c;
   font-size: 1.5rem;
 }
-
 #mainNavbar .nav-link:hover {
   color: #546de5;
 }
-
 #mainNavbar .scrolled {
   color: #FFF;
+}
+
+button:focus {
+  outline: none;
 }
 
 .masthead {
@@ -77,10 +78,8 @@ html, body {
   color: #1f282c;
   font-size: 2rem;
 }
-
 .start-page-content p {
   color: #1f282c;
-  /* font-weight: 100; */
   font-size: 1.2;
   line-height: 2;
 }
