@@ -11,7 +11,7 @@
 
 html, body {
   height: 100%;
-  background-color: #FFF;
+  background-color: #fff;
   font-family: "Nunito", sans-serif;
   color: #000;
   font-size: 16px;
@@ -19,42 +19,40 @@ html, body {
 
 /* TOGGLER ICON COLOR CHANGE*/
 .navbar-light .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(37, 54, 71)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 .navbar-light .navbar-toggler {
-  border-color: #1f282c;
+  border: 0px;
 }
 
 .navbar-dark .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
-.navbar-dark .navbar-toggler {
-  border-color: #FFF;
-}
 
 .navbar-toggler {
-  padding: 0.0625rem 0.375rem;
+  padding: 0.375rem;
 }
 
 /* NAVBAR BACKGROUND COLOR CHANGE FUNCTION */
 .navbar.scrolled {
-  background-color: #1f282c;
+  background-color: #000;
   transition: background 500ms;
 }
 
 /* BRAND AND LINKS' COLOR CHANGE */
 #mainNavbar .nav-link {
-  color: #1f282c;
+  color: #000;
+  text-transform: capitalize;
 }
 #mainNavbar .navbar-brand {
-  color: #1f282c;
+  color: #000;
   font-size: 1.5rem;
 }
 #mainNavbar .nav-link:hover {
-  color: #546de5;
+  color: #778beb;
 }
 #mainNavbar .scrolled {
-  color: #FFF;
+  color: #fff;
 }
 
 button:focus {
@@ -68,18 +66,15 @@ button:focus {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 100%;
-  margin: 0;
-  padding: 0;
 }
 
 /* MAIN CONTENT */
 .start-page-content h2 {
-  color: #1f282c;
+  color: #000;
   font-size: 2rem;
 }
 .start-page-content p {
-  color: #1f282c;
+  color: #000;
   font-size: 1.2;
   line-height: 2;
 }
