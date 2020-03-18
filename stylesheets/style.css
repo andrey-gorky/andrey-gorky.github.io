@@ -74,6 +74,10 @@ button:focus {
 }
 
 /* MAIN CONTENT */
+.image-gallery-type1 {
+  height: 40%;
+}
+
 .start-page-content h2 {
   color: #1f282c;
   font-size: 2rem;

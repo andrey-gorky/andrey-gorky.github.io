@@ -1,3 +1,19 @@
+<<<<<<< Updated upstream
+=======
+// VARIABLES
+$main-color-white       : #fff;
+$main-color-black       : #000;
+$main-color-link-hover  : #778beb;
+
+%absolute {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+>>>>>>> Stashed changes
 *,
 *::before,
 *::after {
@@ -89,6 +105,10 @@ button:focus {
 }
 
 /* MAIN CONTENT */
+
+.image-gallery-type1 {
+    height: 40%;
+}
 
 .start-page-content {
     h2 {
