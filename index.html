@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
 
     <!-- Font Awesome -->
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/af9d88c77a.js" crossorigin="anonymous"></script>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -28,26 +28,24 @@
       <!-- NAVBAR INSTALLATION -->
       <div id="togglerColor">
         <nav id="mainNavbar" class="navbar navbar-expand-md navbar-light py-0 fixed-top">
-          <a id="navbarBrand" href="#" class="navbar-brand">Alina Hamalia</a>
+          <a id="navbarBrand" href="./index.html" class="navbar-brand p-0 mr-0 my-1 ml-3">Alina Hamalia</a>
           <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle Navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div id="navLinks" class="collapse navbar-collapse">
             <ul class="navbar-nav ml-auto align-items-center">
               <li class="nav-item">
-                <a href="#" class="nav-link">HOME</a>
+                <a href="./index.html" class="nav-link mr-md-5">Home</a> 
+                <!-- mr-lg-2 mr-xl-4 -->
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">CREATION</a>
+                <a href="#" class="nav-link mr-md-5">Art</a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">SKY ART</a>
+                <a href="#" class="nav-link mr-md-5">About</a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">BIOGRAPHY</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">CONTACTS</a>
+                <a href="./html/contacts.html" class="nav-link mr-md-3">Contacts</a>
               </li>
             </ul>
           </div>
@@ -76,53 +74,114 @@
 
         </div>
       </section> -->
+
+
+      <!-- IMAGE GALLERY -->
       <section class="container-fluid main-page-content">
-        <div class="row justify-content-around">
-
-          <figure class="p-0 col-md-6 col-lg-4 m-2"> <!-- -->
-            <img src="./imgs/paintings_1.webp" class="img-fluid image-gallery-type1 p-0" alt="img">
-            <figcaption>
-              <h3 class="image-gallery-title1">Image title</h3>
-              <p class="image-gallery-paragraph1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, illum. Dicta provident neque assumenda saepe velit voluptatem quasi rem? Consequatur ullam, magnam illo facilis distinctio totam reprehenderit quidem sint sed.</p>
-              <a href="#" class="image-gallery-link1">View more</a>
-            </figcaption>
-          </figure>
-
-          <figure class="p-0 col-md-6 col-lg-4 m-2"> <!-- -->
-            <img src="./imgs/paintings_2.webp" class="img-fluid image-gallery-type1 p-0" alt="img">
-            <figcaption>
-              <h3 class="image-gallery-title1">Image title</h3>
-              <p class="image-gallery-paragraph1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, illum. Dicta provident neque assumenda saepe velit voluptatem quasi rem? Consequatur ullam, magnam illo facilis distinctio totam reprehenderit quidem sint sed.</p>
-              <a href="#" class="image-gallery-link1">View more</a>
-            </figcaption>
-          </figure>
-          
-          <figure class="p-0 col-md-6 col-lg-4 m-2"> <!-- -->
-            <img src="./imgs/paintings_3.webp" class="img-fluid image-gallery-type1 p-0" alt="img">
-            <figcaption>
-              <h3 class="image-gallery-title1">Image title</h3>
-              <p class="image-gallery-paragraph1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, illum. Dicta provident neque assumenda saepe velit voluptatem quasi rem? Consequatur ullam, magnam illo facilis distinctio totam reprehenderit quidem sint sed.</p>
-              <a href="#" class="image-gallery-link1">View more</a>
-            </figcaption>
-          </figure>
-
-          <figure class="p-0 col-md-6 col-lg-4 m-2"> <!-- -->
-            <img src="./imgs/paintings_1.webp" class="img-fluid image-gallery-type1 p-0" alt="img">
-            <figcaption>
-              <h3 class="image-gallery-title1">Image title</h3>
-              <p class="image-gallery-paragraph1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, illum. Dicta provident neque assumenda saepe velit voluptatem quasi rem? Consequatur ullam, magnam illo facilis distinctio totam reprehenderit quidem sint sed.</p>
-              <a href="#" class="image-gallery-link1">View more</a>
-            </figcaption>
-          </figure>
-          
+        
+        <div class="row justify-content-center">
+          <div class="col-6 start-page-content text-left mb-3"> <!-- Убираем px-0 -->
+              <h2 class="text-center">ЗАГОЛОВОК РАЗДЕЛА</h2>
+              <p>Немножко текста раздела Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor mollitia architecto cumque id totam asperiores nostrum ea impedit debitis amet!</p>
+          </div>
         </div>
-      </section>
+        
+        <div class="row justify-content-around justify-content-md-start">
 
-  
+          <figure class="px-2 mb-3 col-11 col-md-6 col-lg-4">
+            <div class="img-fluid" alt="img">
+              <div class="image-gallery-type1 img1"></div>
+            </div>
+            <figcaption>
+              <h3 class="image-gallery-title1">Image title</h3>
+              <!-- PARAGRAPH LENGTH MUST BE NO MORE THAN 195 CHARACTERS -->
+              <p class="image-gallery-paragraph1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, illum. Dicta provident neque assumenda saepe velit voluptatem quasi rem? Consequatur ullam, magnam illo facilis distinctio totam.</p>
+              <a href="./html/image-one.html" class="image-gallery-link1">View more</a>
+            </figcaption>
+          </figure>
+
+          <figure class="px-2 mb-3 col-11 col-md-6 col-lg-4">
+            <div class="img-fluid" alt="img">
+              <div class="image-gallery-type1 img2"></div>
+            </div>
+            <figcaption>
+              <h3 class="image-gallery-title1">Image title</h3>
+              <p class="image-gallery-paragraph1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, illum. Dicta provident neque assumenda saepe velit voluptatem quasi rem? Consequatur ullam, magnam illo facilis distinctio totam.</p>
+              <a href="./html/image-one.html" class="image-gallery-link1">View more</a>
+            </figcaption>
+          </figure>
+
+          <figure class="px-2 mb-3 col-11 col-md-6 col-lg-4">
+            <div class="img-fluid" alt="img">
+              <div class="image-gallery-type1 img3"></div>
+            </div>
+            <figcaption>
+              <h3 class="image-gallery-title1">Image title</h3>
+              <p class="image-gallery-paragraph1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, illum. Dicta provident neque assumenda saepe velit voluptatem quasi rem? Consequatur ullam, magnam illo facilis distinctio totam.</p>
+              <a href="./html/image-one.html" class="image-gallery-link1">View more</a>
+            </figcaption>
+          </figure>
+
+          <figure class="px-2 mb-3 col-11 col-md-6 col-lg-4">
+            <div class="img-fluid" alt="img">
+              <div class="image-gallery-type1 img4"></div>
+            </div>
+            <figcaption>
+              <h3 class="image-gallery-title1">Image title</h3>
+              <p class="image-gallery-paragraph1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, illum. Dicta provident neque assumenda saepe velit voluptatem quasi rem? Consequatur ullam, magnam illo facilis distinctio totam.</p>
+              <a href="#" class="image-gallery-link1">View more</a>
+            </figcaption>
+          </figure>
+
+          <figure class="px-2 mb-3 col-11 col-md-6 col-lg-4">
+            <div class="img-fluid" alt="img">
+              <div class="image-gallery-type1 img5"></div>
+            </div>
+            <figcaption>
+              <h3 class="image-gallery-title1">Image title</h3>
+              <p class="image-gallery-paragraph1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, illum. Dicta provident neque assumenda saepe velit voluptatem quasi rem? Consequatur ullam, magnam illo facilis distinctio totam.</p>
+              <a href="#" class="image-gallery-link1">View more</a>
+            </figcaption>
+          </figure>
+
+          <figure class="px-2 mb-3 col-11 col-md-6 col-lg-4">
+            <div class="img-fluid" alt="img">
+              <div class="image-gallery-type1 img1"></div>
+            </div>
+            <figcaption>
+              <h3 class="image-gallery-title1">Image title</h3>
+              <p class="image-gallery-paragraph1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, illum. Dicta provident neque assumenda saepe velit voluptatem quasi rem? Consequatur ullam, magnam illo facilis distinctio totam.</p>
+              <a href="#" class="image-gallery-link1">View more</a>
+            </figcaption>
+          </figure>
+
+          <figure class="px-2 mb-3 col-11 col-md-6 col-lg-4">
+            <div class="img-fluid" alt="img">
+              <div class="image-gallery-type1 img4"></div>
+            </div>
+            <figcaption>
+              <h3 class="image-gallery-title1">Image title</h3>
+              <p class="image-gallery-paragraph1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, illum. Dicta provident neque assumenda saepe velit voluptatem quasi rem? Consequatur ullam, magnam illo facilis distinctio totam.</p>
+              <a href="#" class="image-gallery-link1">View more</a>
+            </figcaption>
+          </figure>
+
+          <figure class="px-2 mb-3 col-11 col-md-6 col-lg-4">
+            <div class="img-fluid" alt="img">
+              <div class="image-gallery-type1 img2"></div>
+            </div>
+            <figcaption>
+              <h3 class="image-gallery-title1">Image title</h3>
+              <p class="image-gallery-paragraph1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, illum. Dicta provident neque assumenda saepe velit voluptatem quasi rem? Consequatur ullam, magnam illo facilis distinctio totam.</p>
+              <a href="#" class="image-gallery-link1">View more</a>
+            </figcaption>
+          </figure>
+
+
       <!-- MOST LIKELY THE CONTENT WILL DIFFER, SO THERE WILL BE DIFFERENT <SECTIONS> AS WELL  -->
       <section class="container-fluid main-page-content">
         <div class="row align-items-center">
-          <div class="col-md-6 text-center order-md-2 mb-3 mb-md-0"> <!-- Убираем px-0 -->
+          <div class="col-md-6 text-left order-md-2 mb-3 mb-md-0"> <!-- Убираем px-0 -->
             <div class="row justify-content-center">
               <div class="col-10 col-lg-8 start-page-content">
                 <h2>ЗАГОЛОВОК РАЗДЕЛА</h2>
@@ -138,7 +197,7 @@
 
       <section class="container-fluid main-page-content">
         <div class="row align-items-center">
-          <div class="col-md-6 text-center mb-3 mb-md-0"> <!-- Убираем px-0 -->
+          <div class="col-md-6 text-left mb-3 mb-md-0"> <!-- Убираем px-0 -->
             <div class="row justify-content-center">
               <div class="col-10 col-lg-8 start-page-content">
                 <h2>ДРУГОЙ ЗАГОЛОВОК РАЗДЕЛА</h2>
@@ -154,7 +213,7 @@
 
       <section class="container-fluid main-page-content">
         <div class="row align-items-center">
-          <div class="col-md-6 text-center order-md-2 mb-3 mb-md-0"> <!-- Убираем px-0 -->
+          <div class="col-md-6 text-left order-md-2 mb-3 mb-md-0"> <!-- Убираем px-0 -->
             <div class="row justify-content-center">
               <div class="col-10 col-lg-8 start-page-content">
                 <h2>ТРЕТИЙ РАЗДЕЛ</h2>
@@ -170,7 +229,7 @@
 
       <section class="container-fluid main-page-content">
         <div class="row align-items-center">
-          <div class="col-md-6 text-center mb-3 mb-md-0"> <!-- Убираем px-0 -->
+          <div class="col-md-6 text-left mb-3 mb-md-0"> <!-- Убираем px-0 -->
             <div class="row justify-content-center">
               <div class="col-10 col-lg-8 start-page-content">
                 <h2>НУ И ЧЕТВЕРТЫЙ РАЗДЕЛ</h2>
@@ -186,8 +245,27 @@
 
     </main>
 
+    <footer class="page-footer font-small container-fluid">
+      <div class="row text-center justify-content-center justify-content-md-between">
 
-      
+        <!-- Copyright -->
+        <div class="footer-copyright text-md-left col-md-5 py-1">Copyright © 2020 Alina Hamalia <br>Developed by 
+          <a class="footer-link" href="https://github.com/andrey-gorky">Andrey Gorky</a>
+        </div>
+        <!-- Copyright -->
+
+        <div class="social-media-buttons">
+          <a href="https://www.facebook.com/Alina.Gamalya"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/alina_gamalya/"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/channel/UC3uGNyLhW8x3-doS-jl1umw?view_as=subscriber"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.pinterest.com/agamalya/"><i class="fab fa-pinterest-p"></i></a>
+        </div>
+
+      </div>
+    
+    </footer>
+
+
       
       
      

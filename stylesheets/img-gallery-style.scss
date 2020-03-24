@@ -10,17 +10,41 @@ figure {
     position: relative;
     overflow: hidden;
     // min-width: 360px;
-    max-width: 466px; /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-    max-height: 350px; /*?????????????????????????????????*/
+    // max-width: 466px; /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    max-height: 350px; /*Ограничивает сдвиг изображения при наведении*/
     text-align: center;
     margin: 0;
     
     .image-gallery-type1 {
       box-shadow: -1px 1px 15px -5px #010101;
-      height: 390px; /*??????????????????????????????????*/
+      width: 100%;
+      height: 390px; /*Verry important property*/
       opacity: 0.8;
       transform: translate3d(0, -30px, 0);
       transition: opacity 0.35s, transform 0.35s;
+      background-position: center;
+      background-size: cover;	
+      background-repeat: no-repeat;
+    }
+
+    .img1 {
+      background-image: url(../imgs/paintings_1.webp);
+    }
+    
+    .img2 {
+      background-image: url(../imgs/paintings_2.webp);
+    }
+    
+    .img3 {
+      background-image: url(../imgs/paintings_3.webp);
+    }
+    
+    .img4 {
+      background-image: url(../imgs/paintings_4.webp);
+    }
+    
+    .img5 {
+      background-image: url(../imgs/paintings_5.webp);
     }
     
     figcaption {
@@ -42,7 +66,7 @@ figure {
       }
       
       &:after {
-        top: 30px; /* ВОЗМОЖНО, СТОИТ ПЕРЕВЕСТИ В ПРОЦЕНТЫ ??*/
+        top: 30px;
         right: 50px;
         bottom: 30px;
         left: 50px;
@@ -76,6 +100,11 @@ figure {
     .image-gallery-paragraph1 {
       font-size: 0.875rem;
       font-weight: 300;
+      max-width: 75ch;
+      white-space: normal;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
       opacity: 0;
       transform: translate3d(0, 10px, 0);
       transition: opacity 0.5s, transform 0.4s;
@@ -103,10 +132,8 @@ figure {
             }
         }
     }
-
-
   }
-/*  
+ 
   figure {
     &:hover {
       .image-gallery-type1 {
@@ -136,5 +163,3 @@ figure {
       }
     }
   }
-  
-  */
