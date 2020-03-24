@@ -1,0 +1,102 @@
+/*
+sass --watch ./stylesheets/contacts.scss ./stylesheets/contacts.css
+sass ./stylesheets/contacts.scss ./stylesheets/contacts.css
+*/
+
+// VARIABLES
+$main-color-bright    : #fff;
+$main-color-dark      : #1f282c;
+$main-color-link-hover: #778beb;
+
+.masthead {
+    background: none;
+    max-height: 6%;
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    font-weight: bold;
+    // padding-top: 15%;
+}
+
+.main-container {
+    margin-top: 80px;
+}
+
+#artist-portrait {
+    width: 20%;
+    min-width: 138px;
+    height: 20%;
+    min-height: 208.3px;
+    border-radius: 50%;
+    
+}
+
+address .address {
+    color: #000;
+
+    &:hover {
+        text-decoration: none;
+        // color: $main-color-link-hover;
+        opacity: 0.7;
+    }
+}
+
+
+/* ICONS HOVER ANIMATION */
+
+.contact-buttons a {
+    display: inline-flex;
+    text-decoration: none;
+    font-size: 3.6rem;
+    width: 150px;
+    height: 150px;
+    color: $main-color-bright;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0 15;
+    z-index: 2;
+
+    &:before {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background: $main-color-dark;
+        border-radius: 50%;
+        z-index: -1;
+        transition: 0.3s ease-in;
+    }
+
+    &:hover {
+        &:before {
+        transform: scale(0);
+        }
+
+        & i {
+            background: linear-gradient(45deg, $main-color-dark, $main-color-dark);
+            -webkit-background-clip: text;
+               -moz-background-clip: text;
+                    background-clip: text;
+            -webkit-text-fill-color: transparent;
+               -moz-text-fill-color: transparent;
+            transform: scale(1.6);
+        }
+
+        & .location {
+            background: linear-gradient(45deg, #22a6b3, #30336b);
+            -webkit-background-clip: text;
+               -moz-background-clip: text;
+                    background-clip: text;
+            -webkit-text-fill-color: transparent;
+               -moz-text-fill-color: transparent;
+            transform: scale(1.6);
+        }
+    }
+
+    & i {
+        transition: 0.1s ease-in;
+    }
+}

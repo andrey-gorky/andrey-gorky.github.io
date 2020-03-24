@@ -1,0 +1,85 @@
+/*
+sass --watch ./stylesheets/contacts.scss ./stylesheets/contacts.css
+sass ./stylesheets/contacts.scss ./stylesheets/contacts.css
+*/
+.masthead {
+  background: none;
+  max-height: 6%;
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.main-container {
+  margin-top: 80px;
+}
+
+#artist-portrait {
+  width: 20%;
+  min-width: 138px;
+  height: 20%;
+  min-height: 208.3px;
+  border-radius: 50%;
+}
+
+address .address {
+  color: #000;
+}
+address .address:hover {
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+/* ICONS HOVER ANIMATION */
+.contact-buttons a {
+  display: inline-flex;
+  text-decoration: none;
+  font-size: 3.6rem;
+  width: 150px;
+  height: 150px;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 15;
+  z-index: 2;
+}
+.contact-buttons a:before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: #1f282c;
+  border-radius: 50%;
+  z-index: -1;
+  transition: 0.3s ease-in;
+}
+.contact-buttons a:hover:before {
+  transform: scale(0);
+}
+.contact-buttons a:hover i {
+  background: linear-gradient(45deg, #1f282c, #1f282c);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  transform: scale(1.6);
+}
+.contact-buttons a:hover .location {
+  background: linear-gradient(45deg, #22a6b3, #30336b);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  transform: scale(1.6);
+}
+.contact-buttons a i {
+  transition: 0.1s ease-in;
+}
+
+/*# sourceMappingURL=contacts.css.map */

@@ -1,7 +1,15 @@
+/*
+Terminal sass commands
+sass --watch ./stylesheets/style.scss ./stylesheets/style.css
+sass ./stylesheets/style.scss ./stylesheets/style.css
+sass --watch ./stylesheets/img-gallery-style.scss ./stylesheets/img-gallery-style.css
+sass ./stylesheets/img-gallery-style.scss ./stylesheets/img-gallery-style.css
+*/
+
 // VARIABLES
-$main-color-white       : #fff;
-$main-color-black       : #000;
-$main-color-link-hover  : #778beb;
+$main-color-bright    : #fff;
+$main-color-dark      : #1f282c;
+$main-color-link-hover: #778beb;
 
 %absolute {
     position: absolute;
@@ -24,9 +32,9 @@ $main-color-link-hover  : #778beb;
 
 html, body {
     height: 100%;
-    background-color: #FFF;
+    background-color: $main-color-bright;
     font-family: "Nunito", sans-serif;
-    color: #000;
+    color: $main-color-dark;
     font-size: 16px;
 }
 
@@ -37,7 +45,7 @@ html, body {
     }
 
     .navbar-toggler {
-        border-color: #1f282c;
+        border: none;
     }
 }
 
@@ -47,7 +55,8 @@ html, body {
     }
     
     .navbar-toggler {
-        border-color: #FFF;
+        border: none;
+        // border-color: $main-color-bright;
     }
 }
 
@@ -58,7 +67,7 @@ html, body {
 /* NAVBAR BACKGROUND COLOR CHANGE FUNCTION */
 .navbar {
     &.scrolled {
-        background-color: #1f282c;
+        background-color: $main-color-dark;
         transition: background 500ms;
     }
 }
@@ -66,24 +75,23 @@ html, body {
 /* BRAND AND LINKS' COLOR CHANGE */
 #mainNavbar {
     .nav-link {
-        color: #1f282c;
+        color: $main-color-dark;
     }
 
     .navbar-brand {
-        color: #1f282c;
+        color: $main-color-dark;
         font-size: 1.5rem;
     }
 
     .nav-link:hover {
-        color: #546de5;
+        // color: $main-color-link-hover;
+        opacity: 0.7;
     }
 
     .scrolled {
-        color: #FFF;
+        color: $main-color-bright;
     }
 }
-
-
 
 button:focus {
     outline: none;
@@ -103,18 +111,14 @@ button:focus {
 
 /* MAIN CONTENT */
 
-.image-gallery-type1 {
-    height: 40%;
-}
-
 .start-page-content {
     h2 {
-        color: #1f282c;
+        color: $main-color-dark;
         font-size: 2rem;
     }
 
     p {
-        color: #1f282c;
+        color: $main-color-dark;
         font-size: 1.2;
         line-height: 2;
     }
@@ -128,3 +132,74 @@ button:focus {
 
 
 /* MAIN PART */
+
+
+
+/* FOOTER */
+
+footer {
+    color: $main-color-bright;
+    background-color: $main-color-dark;
+
+    .footer-link {
+        color: $main-color-bright;
+        text-decoration: none;
+
+        &:hover {
+            // color: $main-color-link-hover;
+            opacity: 0.7;
+        }
+    }
+}
+
+.social-media-buttons a {
+    display: inline-flex;
+    text-decoration: none;
+    font-size: 1.5rem;
+    width: 60px;
+    height: 60px;
+    color: $main-color-dark;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0 15;
+    z-index: 2;
+
+    &:before {
+        content: "";
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background: $main-color-bright;
+        border-radius: 50%;
+        z-index: -1;
+        transition: 0.3s ease-in;
+    }
+
+    &:hover {
+        &:before {
+        transform: scale(0);
+        }
+
+        & i {
+            background: linear-gradient(45deg, $main-color-bright, $main-color-bright);
+            -webkit-background-clip: text;
+               -moz-background-clip: text;
+                    background-clip: text;
+            -webkit-text-fill-color: transparent;
+               -moz-text-fill-color: transparent;
+            transform: scale(1.2);
+        }
+    }
+
+    & i {
+        transition: 0.1s ease-in;
+    }
+}
+
+
+
+
+
+
+
