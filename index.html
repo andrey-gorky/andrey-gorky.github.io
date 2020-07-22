@@ -30,7 +30,16 @@
 		<!-- NAVBAR INSTALLATION -->
 		<div id="togglerColor">
 			<nav id="mainNavbar" class="navbar navbar-expand-md navbar-light py-0 fixed-top">
-				<a id="navbarBrand" href="./index.html" class="navbar-brand p-0 mr-0 my-1 ml-3">Hamalia</a>
+				<!-- Логотип -->
+				<!-- <a id="navbarBrand" href="./index.html" class="navbar-brand p-0 mr-0 my-1 ml-3">Alina Hamalia</a>  -->
+				<div class="nav-social-media-buttons">
+					<a href="https://www.facebook.com/Alina.Gamalya" target="_blank"><i
+							class="fab fa-facebook-f nav-socials"></i></a>
+					<a href="https://www.instagram.com/alina_gamalya/" target="_blank"><i
+							class="fab fa-instagram nav-socials"></i></a>
+					<a href="https://web.telegram.org/#/im?p=u467891254_3679202258555821839" target="_blank"><i
+							class="fab fa-telegram nav-socials"></i></a>
+				</div>
 				<button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle Navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
@@ -41,7 +50,7 @@
 							<!-- mr-lg-2 mr-xl-4 -->
 						</li>
 						<li class="nav-item">
-							<a href="#" class="nav-link mr-md-5">Art</a>
+							<a href="#" class="nav-link mr-md-5">Sky&Sea</a>
 						</li>
 						<li class="nav-item">
 							<a href="#" class="nav-link mr-md-5">About</a>
@@ -53,6 +62,9 @@
 				</div>
 			</nav>
 		</div>
+
+		<h1 class="logo text-center">ARTIST<br> <strong class="logo-name">Alina Hamalia</strong>
+		</h1>
 
 		<!-- POTENTIAL HEADING TEXT -->
 		<!-- <section class="container h-100">
@@ -322,10 +334,10 @@
 			$(document).scroll(function () {
 				var $nav = $("#mainNavbar");
 				var $navLink = $(".nav-link");
-				var $navBrand = $(".navbar-brand");
+				var $navSocials = $(".nav-socials");
 				$nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
 				$navLink.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
-				$navBrand.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+				$navSocials.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
 				$nav.toggleClass("navbar-dark", $(this).scrollTop() > $nav.height());
 			})
 		})
