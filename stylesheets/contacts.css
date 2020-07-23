@@ -1,10 +1,19 @@
+@charset "UTF-8";
 /*
 sass --watch ./stylesheets/contacts.scss ./stylesheets/contacts.css
 sass ./stylesheets/contacts.scss ./stylesheets/contacts.css
 */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+}
+
 .masthead {
   background: none;
-  max-height: 6%;
   margin: 0;
   padding: 0;
 }
@@ -13,23 +22,20 @@ sass ./stylesheets/contacts.scss ./stylesheets/contacts.css
   font-weight: bold;
 }
 
-.main-container {
-  margin-top: 80px;
-}
-
 #artist-portrait {
   width: 20%;
   min-width: 138px;
   height: 20%;
-  min-height: 208.3px;
+  min-height: 138px;
   border-radius: 50%;
 }
 
-address .address {
+.contacts-link {
+  text-decoration: underline;
   color: #000;
 }
-address .address:hover {
-  text-decoration: none;
+.contacts-link:hover {
+  color: #000;
   opacity: 0.7;
 }
 
@@ -57,6 +63,18 @@ address .address:hover {
   z-index: -1;
   transition: 0.3s ease-in;
 }
+.contact-buttons a:hover {
+  /* СМЕНА ЦВЕТА НА ЗНАЧКЕ ЛОКАЦИИ
+  & .location {
+          background: linear-gradient(45deg, #22a6b3, #30336b);
+          -webkit-background-clip: text;
+             -moz-background-clip: text;
+                  background-clip: text;
+          -webkit-text-fill-color: transparent;
+             -moz-text-fill-color: transparent;
+          transform: scale(1.6);
+      } */
+}
 .contact-buttons a:hover:before {
   transform: scale(0);
 }
@@ -69,17 +87,8 @@ address .address:hover {
   -moz-text-fill-color: transparent;
   transform: scale(1.6);
 }
-.contact-buttons a:hover .location {
-  background: linear-gradient(45deg, #22a6b3, #30336b);
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  transform: scale(1.6);
-}
 .contact-buttons a i {
-  transition: 0.1s ease-in;
+  transition: 0.3s ease-in;
 }
 
 /*# sourceMappingURL=contacts.css.map */

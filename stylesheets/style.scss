@@ -140,7 +140,7 @@ button:focus {
 
 			.logo-name {
 				font-size: 6vw;
-				font-weight: 600;
+				font-weight: 500;
 			}
 		}
 }
@@ -175,18 +175,19 @@ button:focus {
 /* FOOTER */
 
 footer {
+  color: $main-color-bright;
+	background-color: $main-color-dark;
+	
+
+  .footer-link {
     color: $main-color-bright;
-    background-color: $main-color-dark;
+    text-decoration: none;
 
-    .footer-link {
-        color: $main-color-bright;
-        text-decoration: none;
-
-        &:hover {
-            // color: $main-color-link-hover;
-            opacity: 0.7;
-        }
+    &:hover {
+      // color: $main-color-link-hover;
+      opacity: 0.7;
     }
+  }
 }
 
 .social-media-buttons a {

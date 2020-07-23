@@ -8,39 +8,46 @@ $main-color-bright    : #fff;
 $main-color-dark      : #1f282c;
 $main-color-link-hover: #778beb;
 
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	flex-grow: 1;
+}
+
+
 .masthead {
     background: none;
-    max-height: 6%;
     margin: 0;
     padding: 0;
 }
+
 
 .title {
     font-weight: bold;
     // padding-top: 15%;
 }
 
-.main-container {
-    margin-top: 80px;
-}
-
 #artist-portrait {
     width: 20%;
     min-width: 138px;
     height: 20%;
-    min-height: 208.3px;
+    // min-height: 208.3px;
+    min-height: 138px;
     border-radius: 50%;
     
 }
 
-address .address {
-    color: #000;
+.contacts-link {
+	text-decoration: underline;
+	color: #000;
 
-    &:hover {
-        text-decoration: none;
-        // color: $main-color-link-hover;
-        opacity: 0.7;
-    }
+	&:hover {
+		color: #000;
+		opacity: 0.7;
+	}
 }
 
 
@@ -85,7 +92,8 @@ address .address {
             transform: scale(1.6);
         }
 
-        & .location {
+				/* СМЕНА ЦВЕТА НА ЗНАЧКЕ ЛОКАЦИИ
+				& .location {
             background: linear-gradient(45deg, #22a6b3, #30336b);
             -webkit-background-clip: text;
                -moz-background-clip: text;
@@ -93,10 +101,10 @@ address .address {
             -webkit-text-fill-color: transparent;
                -moz-text-fill-color: transparent;
             transform: scale(1.6);
-        }
+        } */
     }
 
     & i {
-        transition: 0.1s ease-in;
+        transition: 0.3s ease-in;
     }
 }
