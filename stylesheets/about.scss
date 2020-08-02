@@ -1,0 +1,203 @@
+/*
+sass --watch ./stylesheets/about.scss ./stylesheets/about.css
+sass ./stylesheets/about.scss ./stylesheets/about.css
+*/
+%absolute {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+// VARIABLES
+$main-color-bright    : #fff;
+$main-color-dark      : #1f282c;
+$main-color-link-hover: #778beb;
+
+body {
+	display: flex;
+	flex-direction: column;
+	font-family: 'Montserrat', sans-serif
+}
+
+main {
+	flex-grow: 1;
+}
+
+// #main-indent {
+// 	margin-top: 50px;
+// }
+
+
+.figure {
+	position: relative;
+	overflow: hidden;
+	// min-width: 360px;
+	// max-width: 466px; /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+	// max-height: 350px; /*Ограничивает сдвиг изображения при наведении*/
+	text-align: center;
+	margin: 0;
+	
+	.about-block {
+		// box-shadow: -1px 1px 15px -5px #010101;
+		width: 100%;
+		height: 550px; /*Verry important property*/
+		// opacity: 0.8;
+		// transform: translate3d(0, -30px, 0);
+		// transition: opacity 0.35s, transform 0.35s;
+		background-position: center;
+		background-size: cover;	
+		background-repeat: no-repeat;
+	}
+
+	#alina-hamalia-photo {
+		background-image: url(../imgs/alina-hamalia-photo.png);
+
+	}
+	
+	#about-main {
+		margin: 0;
+		padding: 0;
+		color: $main-color-bright;
+		background-color: $main-color-dark;
+		// * {
+		// 	margin: 0;
+		// 	padding: 0;
+		// };
+	}
+
+	.figcaption {
+		// @extend %absolute;
+	//   box-sizing: border-box;
+	  color: $main-color-bright;
+		padding-top: 30px;
+		// text-align: center;
+		font-size: 1.25rem;
+		text-shadow: 1px 1px 3px $main-color-dark;
+
+		h1 {
+			letter-spacing: .3rem;
+		}
+
+		hr {
+			border: none; /* Убираем границу */
+			background-color: $main-color-bright; /* Цвет линии */
+			color: $main-color-bright; /* Цвет линии для IE6-7 */
+			height: 1px; /* Толщина линии */
+			width: 20%;
+			margin-top: 0.6rem;
+			margin-bottom: 1rem;
+		}
+				
+		// &:after,
+		// &:before {
+		// 	content: '';
+		// 	pointer-events: none;
+		// 	position: absolute;
+		// 	opacity: 0;
+		// 	transition: opacity 0.35s, transform 0.35s;
+		// }
+		
+		// &:after {
+		// 	top: 30px;
+		// 	right: 50px;
+		// 	bottom: 30px;
+		// 	left: 50px;
+		// 	border-right: 1px solid #fff;
+		// 	border-left: 1px solid #fff;
+		// 	transform: scale(1,0);
+		// 	transform-origin: 100% 0;
+		// }
+		
+		// &:before {
+		// 	top: 50px;
+		// 	right: 30px;
+		// 	bottom: 50px;
+		// 	left: 30px;
+		// 	border-top: 1px solid #fff;
+		// 	border-bottom: 1px solid #fff;
+		// 	transform: scale(0,1);
+		// 	transform-origin: 0 0;
+		// }
+	}
+
+	
+	// .image-gallery-title1 {
+	// 	text-align: right;
+	// 	text-transform: uppercase;
+	// 	margin: 0;
+	// 	padding-top: 25%;
+	// 	transition: transform 0.35s;
+	// 	transform: translate3d(0, -30px, 0);
+	// }
+	
+	// .image-gallery-paragraph1 {
+	// 	font-size: 0.875rem;
+	// 	font-weight: 300;
+	// 	max-width: 75ch;
+	// 	white-space: normal;
+	// 	overflow: hidden;
+	// 	text-overflow: ellipsis;
+
+	// 	opacity: 0;
+	// 	transform: translate3d(0, 10px, 0);
+	// 	transition: opacity 0.5s, transform 0.4s;
+	// }
+
+}
+
+
+.about-minor-block {
+	width: 100%;
+	color: $main-color-dark;
+	font-size: 0.8rem;
+
+	br {
+		line-height: 150%;
+	}
+}
+
+
+
+
+// #about-main {
+// 	margin: 0;
+// 	padding: 0;
+// 	color: $main-color-bright;
+// 	background-color: $main-color-dark;
+// 	* {
+// 		margin: 0;
+// 		padding: 0;
+// 	}
+
+	// h1 {
+	// 	letter-spacing: .2rem;
+	// }
+
+// 	hr {
+//     border: none; /* Убираем границу */
+//     background-color: $main-color-bright; /* Цвет линии */
+//     color: $main-color-bright; /* Цвет линии для IE6-7 */
+// 		height: 1px; /* Толщина линии */
+// 		width: 20%;
+		
+// 		margin-top: 0.6rem;
+// 		margin-bottom: 1rem;
+//    }
+// }
+
+
+
+// #artist-portrait {
+//     width: 20%;
+//     min-width: 138px;
+//     height: 20%;
+//     // min-height: 208.3px;
+//     min-height: 138px;
+//     border-radius: 50%;
+    
+// }
+
+
+

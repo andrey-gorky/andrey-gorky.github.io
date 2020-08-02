@@ -1,0 +1,71 @@
+@charset "UTF-8";
+/*
+sass --watch ./stylesheets/about.scss ./stylesheets/about.css
+sass ./stylesheets/about.scss ./stylesheets/about.css
+*/
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.figure {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  margin: 0;
+}
+.figure .about-block {
+  width: 100%;
+  height: 550px;
+  /*Verry important property*/
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.figure #alina-hamalia-photo {
+  background-image: url(../imgs/alina-hamalia-photo.png);
+}
+.figure #about-main {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  background-color: #1f282c;
+}
+.figure .figcaption {
+  color: #fff;
+  padding-top: 30px;
+  font-size: 1.25rem;
+  text-shadow: 1px 1px 3px #1f282c;
+}
+.figure .figcaption h1 {
+  letter-spacing: 0.3rem;
+}
+.figure .figcaption hr {
+  border: none;
+  /* Убираем границу */
+  background-color: #fff;
+  /* Цвет линии */
+  color: #fff;
+  /* Цвет линии для IE6-7 */
+  height: 1px;
+  /* Толщина линии */
+  width: 20%;
+  margin-top: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.about-minor-block {
+  width: 100%;
+  color: #1f282c;
+  font-size: 0.8rem;
+}
+.about-minor-block br {
+  line-height: 150%;
+}
+
+/*# sourceMappingURL=about.css.map */
