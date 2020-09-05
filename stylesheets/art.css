@@ -1,0 +1,17 @@
+/*
+sass --watch ./stylesheets/art.scss ./stylesheets/art.css
+sass ./stylesheets/art.scss ./stylesheets/art.css
+*/
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+}
+main .main-page-content {
+  margin: 0;
+}
+
+/*# sourceMappingURL=art.css.map */

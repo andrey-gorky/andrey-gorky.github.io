@@ -22,14 +22,6 @@ main {
   font-weight: bold;
 }
 
-#artist-portrait {
-  width: 20%;
-  min-width: 138px;
-  height: 20%;
-  min-height: 138px;
-  border-radius: 50%;
-}
-
 .contacts-link {
   text-decoration: underline;
   color: #000;

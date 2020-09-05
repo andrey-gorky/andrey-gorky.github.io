@@ -1,0 +1,24 @@
+/*
+sass --watch ./stylesheets/art.scss ./stylesheets/art.css
+sass ./stylesheets/art.scss ./stylesheets/art.css
+*/
+
+// VARIABLES
+$main-color-bright    : #fff;
+$main-color-dark      : #1f282c;
+$main-color-link-hover: #778beb;
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+
+	.main-page-content {
+		margin: 0;
+	}
+
+	flex-grow: 1;
+}
+

@@ -2,13 +2,8 @@
 sass --watch ./stylesheets/about.scss ./stylesheets/about.css
 sass ./stylesheets/about.scss ./stylesheets/about.css
 */
-%absolute {
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-}
+
+
 
 // VARIABLES
 $main-color-bright    : #fff;
@@ -18,16 +13,11 @@ $main-color-link-hover: #778beb;
 body {
 	display: flex;
 	flex-direction: column;
-	font-family: 'Montserrat', sans-serif
 }
 
 main {
 	flex-grow: 1;
 }
-
-// #main-indent {
-// 	margin-top: 50px;
-// }
 
 
 .figure {

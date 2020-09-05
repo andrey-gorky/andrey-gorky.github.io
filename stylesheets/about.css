@@ -6,7 +6,6 @@ sass ./stylesheets/about.scss ./stylesheets/about.css
 body {
   display: flex;
   flex-direction: column;
-  font-family: "Montserrat", sans-serif;
 }
 
 main {
